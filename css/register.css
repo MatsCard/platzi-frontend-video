@@ -17,7 +17,7 @@ body {
     width: 200px;
 }
 
-.login {
+.register {
     background: linear-gradient(#21C08B, #AB88FF);
     display: flex;
     align-items: center;
@@ -27,72 +27,43 @@ body {
     min-height: calc(100vh - 200px);
 }
 
-.login__container {
+.register__container {
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid white;
     border-radius: 40px;
     color: white;
-    padding: 60px 68px 40px;
-    min-height: 700px;
+    padding: 60px 68px 20px;
+    min-height: 600px;
     width: 300px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
 
-.login__container--form {
+.register__container--form {
     display: flex;
     flex-direction: column;
 
 }
 
-.login__container--form label {
+.register__container--form label {
     font-size: 14px;
 }
 
-.login__container--remember-me {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.login__container--remember-me a {
-    color: white;
+.register__container--login {
+    text-align: center;
     font-size: 14px;
-    text-decoration: none;
+    margin-top: 100px;
 }
 
-.login__container--remember-me a:hover {
-    text-decoration: underline;
-}
-
-.login__container--social-media > div {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-    align-items: flex-start;
-    
-}
-
-.login__container--social-media > div > img {
-    width: 20px;
-    margin-right: 10px ;
-}
-
-.login__container--register {
-    font-size: 14px;
-}
-
-.login__container--register a {
+.register__container--login a {
     color: white;
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
 }
 
-.login__container--register a:hover {
+.register__container--login a:hover {
     text-decoration: underline;
 }
 
@@ -146,18 +117,4 @@ body {
 
 .footer a:hover {
     text-decoration: underline;
-}
-
-@media only screen and (max-width: 600px) {
-    .login__container {
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        width: 100%;
-    }
-
-    .footer {
-        align-items: flex-start;
-        flex-direction: column;
-    }
 }
