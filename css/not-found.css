@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;;
+    background: linear-gradient(#21C08B, #AB88FF);
+    min-height: 100vh;
+}
+
+
+
+.header {
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    top: 0;;
+    width: 100%;
+}
+
+.header__img {
+    margin-left: 30px;
+    width: 200px;
+}
+
+.header__menu {
+    margin-right: 30px;
+}
+
+.header__menu ul {
+    display: none;
+    list-style: none;
+    margin: 0 0 0 -14px;
+    padding: 0;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+}
+
+.header__menu:hover ul, .header__menu ul:hover{
+    display: block;
+}
+
+.header__menu li {
+    margin: 10px 0;
+}
+
+.header__menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header__menu li a:hover{
+    text-decoration: underline;
+}
+
+.header__menu--profile {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.header__menu--profile img {
+    margin-right: 8px;
+    width: 40px;
+}
+
+.header__menu--profile p {
+    margin: 0;
+    color: white;
+}
+
+.not-found {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.not-found--404 {
+    font-size: 5rem;
+    animation-name: notfound;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    margin: 0;
+    height: 100px;
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    width: 100%;
+  }
+  
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 35px;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    margin-bottom: 20px;
+    outline: 0;
+    padding: 0px 20px;
+    width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@keyframes notfound {
+    0% {
+        font-size: 4rem;
+    }
+    50% {
+        font-size: 5rem;
+    }
+    100% {
+        font-size: 4rem;
+    }
+}
